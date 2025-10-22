@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bounce-hover:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("GIF.gif") no-repeat center center/cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background: #6c63ff;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10%;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.text h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+
+.text h1 {
+  font-size: 36px;
+  color: #6c63ff;
+  margin: 10px 0;
+}
+
+.text h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6c63ff;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #6c63ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #574bdb;
+}
+
+.image img {
+  max-width: 250px;
+  border-radius: 15px;
+}
+
+section {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  color: #fff;
+}
+
+.card img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card-text h2 {
+  color: #7b5cff;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeInUp 1s ease-out;
+}
+
+section:nth-of-type(1) { animation-delay: 0s; }
+section:nth-of-type(2) { animation-delay: 0.2s; }
+section:nth-of-type(3) { animation-delay: 0.4s; }
+section:nth-of-type(4) { animation-delay: 0.6s; }
+section:nth-of-type(5) { animation-delay: 0.8s; }
+section:nth-of-type(6) { animation-delay: 1s; }
+section:nth-of-type(7) { animation-delay: 1.2s; }
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #aaa;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.projects-container .card {
+  max-width: 350px;
+  flex: 1 1 300px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.skills-container .card {
+  max-width: 250px;
+  flex: 1 1 200px;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 600px;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.cta-content h1 {
+  color: #6c63ff;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  margin-bottom: 20px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.cta-content .btn {
+  animation: pulse 2s infinite;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 10px;
+  color: #fff;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ccc;
+}
+
+i:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-slides {
+  width: 300%;
+}
+
+.slide {
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.slide .card {
+  max-width: none;
+  width: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background: #574bdb;
+  transform: scale(1.1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 16px 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  /* Mobile form optimization */
+  .card-text form {
+    max-width: 100%;
+  }
+
+  input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  /* Mobile slider improvements */
+  .prev, .next {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+
+  /* Mobile animation optimizations */
+  .section {
+    animation-duration: 0.8s; /* Faster animations on mobile */
+  }
+
+  .fade-in {
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Faster transitions */
+  }
+
+  /* Reduce motion for better performance on mobile */
+  @media (prefers-reduced-motion: reduce) {
+    .section, .fade-in, .bounce-hover, .btn, .nav-links a, .prev, .next {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  /* Touch-friendly button sizes */
+  .btn, .prev, .next {
+    min-height: 44px; /* Apple's recommended minimum touch target */
+    min-width: 44px;
+  }
+
+  /* Additional mobile responsive improvements */
+  .content-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text h1 {
+    font-size: 28px;
+  }
+
+  .text h4 {
+    font-size: 16px;
+  }
+
+  .image img {
+    max-width: 200px;
+    margin-top: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .cta-content h1 {
+    font-size: 24px;
+  }
+}
+
+/* Fade-in animation for scroll-triggered elements */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Progress Bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+}
+
+#scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6c63ff, #ff6b6b);
+  width: 0%;
+  transition: width 0.25s ease;
+}

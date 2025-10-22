@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerick Bigas | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">⚡</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <div class="content-box">
+      <div class="text">
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+        <h1><span id="typing"></span></h1>
+        <h4>Developer / Student</h4>
+        <p>
+          I am an Information Technology student specializing in web development. 
+          I focus on building responsive, user-friendly websites that combine clean design with efficient functionality.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+
+      <div class="image">
+        <img src="Jerick.jpg" alt="profile" class="bounce-hover">
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="content-box">
+      <div class="image">
+        <img src="picture2.jpg" alt="About Me Picture" class="bounce-img">
+      </div>
+      <div class="text">
+        <h1>About Me</h1>
+        <p>
+          As a web development student, I am continuously improving my knowledge of front-end and back-end technologies. 
+          My goal is to apply my skills in developing practical solutions and to contribute to projects that enhance digital experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<section id="skills">
+  <div class="card">
+    <img src="picture1.jpg" alt="Skills">
+    <div class="card-text">
+      <h2>Skills</h2>
+      <p>
+        <i class="fab fa-html5"></i> HTML <br>
+        <i class="fab fa-css3-alt"></i> CSS <br>
+        <i class="fab fa-js-square"></i> JavaScript <br>
+        <i class="fab fa-python"></i> Python <br>
+        <i class="fa fa-c-plus-plus"></i> C++ <br>
+        <i class="fab fa-java"></i> Java <br>
+        <i class="fas fa-brain"></i> Machine Learning <br>
+        <i class="fas fa-database"></i> SQLite <br>
+        <i class="fab fa-git-alt"></i> Git <br>
+        <i class="fas fa-mobile-alt"></i> Responsive Design
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="slider">
+    <div class="slides" id="projects-slides">
+      <div class="slide">
+        <div class="card">
+          <img src="picture3.jpg" alt="Portfolio Website">
+          <div class="card-text">
+            <h2>Portfolio Website</h2>
+            <p>A personal site showcasing my academic work and projects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <img src="picture4.webp" alt="Online Ordering System">
+          <div class="card-text">
+            <h2>Online Ordering System</h2>
+            <p>A simple system built with PHP and MySQL for managing orders.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <img src="picture5.jpg" alt="Responsive Landing Page">
+          <div class="card-text">
+            <h2>Responsive Landing Page</h2>
+            <p>A mobile-friendly page designed with HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="prev"><</button>
+    <button class="next">></button>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="slider">
+    <div class="slides testimonial-slides" id="testimonials-slides">
+      <div class="slide">
+        <div class="card">
+          <img src="Jerick.jpg" alt="Testimonial 1">
+          <div class="card-text">
+            <h2>Testimonials</h2>
+            <p>
+              "Jerick is an exceptional web developer with a keen eye for design and functionality. His portfolio showcases innovative solutions and clean code. Highly recommended for any web development project."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <img src="Jerick.jpg" alt="Testimonial 2">
+          <div class="card-text">
+            <h2>Testimonials</h2>
+            <p>
+              "As a classmate, Jerick consistently demonstrates strong problem-solving skills and dedication to learning. His work in machine learning and game development is impressive."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="card">
+          <img src="Jerick.jpg" alt="Testimonial 3">
+          <div class="card-text">
+            <h2>Testimonials</h2>
+            <p>
+              "Jerick's attention to detail and ability to deliver high-quality code make him a standout developer. I highly recommend him for any software project."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="prev"><</button>
+    <button class="next">></button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <img src="picture6.jpg" alt="Contact">
+    <div class="card-text">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p>
+        📧 Email: jerickbigas775@email.com <br>
+        📞 Phone: +63 975386 8642 <br>
+        🌐 GitHub, Facebook, Instagram
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="cta" class="section">
+  <div class="cta-content">
+    <h1>Ready to Collaborate?</h1>
+    <p>Let's bring your ideas to life. Contact me for projects, opportunities, or just to say hello!</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Jerick Bigas. All rights reserved.</p>
+</footer>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelector('#projects-slides');
+const totalSlides = document.querySelectorAll('#projects .slide').length;
+
+document.querySelector('#projects .next').addEventListener('click', () => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  updateSlide();
+});
+
+document.querySelector('#projects .prev').addEventListener('click', () => {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  updateSlide();
+});
+
+function updateSlide() {
+  const translateX = -currentSlide * (100 / 3);
+  slides.style.transform = `translateX(${translateX}%)`;
+}
+
+let currentTestimonial = 0;
+const testimonialSlides = document.querySelector('#testimonials-slides');
+const totalTestimonialSlides = document.querySelectorAll('#testimonials .slide').length;
+
+document.querySelector('#testimonials .next').addEventListener('click', () => {
+  currentTestimonial = (currentTestimonial + 1) % totalTestimonialSlides;
+  updateTestimonialSlide();
+});
+
+document.querySelector('#testimonials .prev').addEventListener('click', () => {
+  currentTestimonial = (currentTestimonial - 1 + totalTestimonialSlides) % totalTestimonialSlides;
+  updateTestimonialSlide();
+});
+
+function updateTestimonialSlide() {
+  const translateX = -currentTestimonial * (100 / totalTestimonialSlides);
+  testimonialSlides.style.transform = `translateX(${translateX}%)`;
+}
+
+// Typing animation
+const typingElement = document.getElementById('typing');
+const text = 'Jerick Bigas';
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    typingElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 150);
+  }
+}
